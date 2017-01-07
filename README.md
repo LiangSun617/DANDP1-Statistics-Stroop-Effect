@@ -50,9 +50,9 @@ which is the unbiased estimate of the standard deviation of the population diffe
 
 #### 4. Provide one or two visualizations that show the distribution of the sample data.Write one or two sentences noting what you observe about the plot or plots.
 
-![Distribution of sample data](Distribution_histogram.png)
+![Distribution of sample data](/image/Distribution_histogram.png)
 
-![Distribution boxplot](Distribution_box.png)
+![Distribution boxplot](/image/Distribution_box.png)
 
 The red vertical line in the histogram graph stands for where the mean of time lies. Both histogram and boxplot suggest that the mean of time used to read colors of words in congruent condition seems to be smaller than that in incongruent condition. In addition, both graphs show that the mean of difference is away from and smaller than the value 0, which implies that the means of time used to read colors of words in two conditions are likely to be different.
 
