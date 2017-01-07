@@ -7,56 +7,65 @@
 
 #### 1. What is our independent variable? What is our dependent variable?
 
-The independent variable is the word condition, that is, whether the respondent is reading in a congruent or an incongruent words condition. The dependent variable is the time that the respondent takes for color reading all of the words shown in one of the two conditions. 
+The independent variable is the word condition, that is, whether the respondent is reading in a congruent or an incongruent words condition. The dependent variable is the time that the respondent takes for color reading all of the words shown in one of the two conditions.
 
 #### 2.What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.
 
-The null hypothesis is that people take equal amount of time to read colors of words in congruent and incongruent conditions. The alternative hypothesis is that people averagely take more time to read colors of words in incongruent condition than in congruent condition. 
+The null hypothesis is that people take equal amount of time to read colors of words in congruent and incongruent conditions. The alternative hypothesis is that people averagely take more time to read colors of words in incongruent condition than in congruent condition.
 
-Suppose the population mean of time that people take to read colors in congruent condition is $\mu_0$, and the population mean of time that people take to read colors in incongruent condition is $\mu_1$, then we have,
+Suppose the population mean of time that people take to read colors in congruent condition is ![img](/image/1.png), and the population mean of time that people take to read colors in incongruent condition is ![img](/image/2.png), then we have,
 
-$$H_0: \mu_0 = \mu_1$$
-$$H_A: \mu_0 < \mu_1$$
+
+
+![img](/image/3.png)
+
+![img](/image/4.png)
 
 I expect to perform a one-tailed dependent sample t-test, because:
 * First of all,population distribution and standard deviation are unknown, and our sample size is less than 30, so z-score is not appropriate here since it requires our knowledge about the population and a sample size above 30. Instead, t-test, which is based on sample means, can be used for hypothesis testing given a known,small sample. Because of the central limit theorem, the distribution of sample means, in repeated sampling, converges to a normal distribution, regardless of the population distribution. The sampling distribution of a sample with size 24 is also approximately normal. However, we need to assume that the sample distribution is approximately normal in order to perform the t-test. Theoretically, the data for t-test should be a simple random sample from the population, and the data should follow a normal distribution, but in a small sample, it is hard to detect non-normality. If non-normality does exist, the power of t-test will be reduced. In this case, we assume that the population distribution is normal since pyschological measurements usually result in normal distribution, and that our data were sampled randomly. We can thereby assume that our sample is approximately normal.  
-* In addition, in this experiment each respondent reads colors of words in both congruent words condition and incongruent words condition, which means the samples for both words conditions are identical and paired. 
-* Moreover, from our sample data we can intuitively observe that people take more time to read in incongruent condition than in congruent condition. It will be more specific to perform a one-tailed t-test than a two-tailed t-test. 
+* In addition, in this experiment each respondent reads colors of words in both congruent words condition and incongruent words condition, which means the samples for both words conditions are identical and paired.
+* Moreover, from our sample data we can intuitively observe that people take more time to read in incongruent condition than in congruent condition. It will be more specific to perform a one-tailed t-test than a two-tailed t-test.
 
 Therefore, a one-tailed dependent sample t-test is appropriate here to examine whether the population significantly take more time to read colors of words in incongruent condition than in congruent condition based on our sample.
 
 #### 3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variablity.
 
-* The means of the time respondents take to read colors in congruent and incongruent conditions are: 
-$$ \bar{X}_0 = 14.05 $$
-$$ \bar{X}_1 = 22.02 $$
+* The means of the time respondents take to read colors in congruent and incongruent conditions are:
+
+![img](/image/5.png)
+
+![img](/image/6.png)
 
     The mean of the difference between the time respondents take to read colors in two different conditions is:
-    $$ \bar{X}_0 - \bar{X}_1 = -7.97 $$
-    which is the point estimate of $\mu_0-\mu_1$.
+
+  ![img](/image/7.png)
+
+    which is the point estimate of
+
+  ![img](/image/8.png).  
 
 * The standard deviation of the difference between the time respondents take to read colors in two different conditions is:
-$$ s=4.86 $$
+ s=4.86  
 which is the unbiased estimate of the standard deviation of the population difference.
 
 #### 4. Provide one or two visualizations that show the distribution of the sample data.Write one or two sentences noting what you observe about the plot or plots.
 
-![Distribution of sample data](Distribution_histogram.png) 
+![Distribution of sample data](Distribution_histogram.png)
 
-![Distribution boxplot](Distribution_box.png) 
+![Distribution boxplot](Distribution_box.png)
 
 The red vertical line in the histogram graph stands for where the mean of time lies. Both histogram and boxplot suggest that the mean of time used to read colors of words in congruent condition seems to be smaller than that in incongruent condition. In addition, both graphs show that the mean of difference is away from and smaller than the value 0, which implies that the means of time used to read colors of words in two conditions are likely to be different.
 
 #### 5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
 
-Given $\mu_0-\mu_1=-7.97, s=4.86, n=24 $,
-$$ t=\frac{\mu_0-\mu_1}{s/\sqrt{n}}=-8.02$$
+Given ![img](/image/8.png) =-7.97, s=4.86, n=24 ,
+ t=![img](/image/9.png)=-8.02
 
-Since we are performing a one-tailed t-test, and $ \alpha=.05, df=24-1=23$,we can get left-tail t-critical value from the t-table,
+Since we are performing a one-tailed t-test, and ![img](/image/10.png)=.05, df=24-1=23,we can get left-tail t-critical value from the t-table,
 
-$$ t_{critical}=-1.714 $$
+![img](/image/11.png)=-1.714 $$
 
-As \\(t<t_{critical}\\), and the one-tailed p-value \\(<.00001<\alpha\\), we can reject the null hypothesis on 95% confidence level, and draw a conclusion that the mean of time used to read colors of words in incongruent condition is significantly larger than that in congruent condition with a 95% confidence level. The results match up with my expectation.
+As  t<![img](/image/11.png), and the one-tailed p-value <.00001< ![img](/image/10.png), we can reject the null hypothesis on 95% confidence level, and draw a conclusion that the mean of time used to read colors of words in incongruent condition is significantly larger than that in congruent condition with a 95% confidence level. The results match up with my expectation.
 
 #### 6. Optional: What do you think is responsible for the effects observed? Can you think of an alternative or similar task that would result in a similar effect? Some research about the problem will be helpful for thinking about these two questions!
 
